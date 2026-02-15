@@ -8,12 +8,10 @@ SkillSync is a self-hosted, offline-capable learning ecosystem designed to strea
 ![AI](https://img.shields.io/badge/AI-Local_Ollama-purple)
 
 ## 📖 Table of Contents
-- [About the Project](#-about-the-project)
-- [Key Features](#-key-features)
-- [Tech Stack](#-tech-stack)
-- [System Architecture](#-system-architecture)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
+- [About the Project]
+- [Problem Statement and Project Elaboration]
+- [Key Features]
+- [Tech Stack and Project Architecture]
 - [License](#-license)
 
 ---
