@@ -12,7 +12,7 @@ SkillSync is a self-hosted, offline-capable learning ecosystem designed to strea
 - [Problem Statement and Project Elaboration]
 - [Key Features]
 - [Tech Stack and Project Architecture]
-- [License](#-license)
+- [License]
 
 ---
 
@@ -63,3 +63,26 @@ Neuro-Roadmap Generator:** Uses a local LLM (Llama 3 / Mistral via Ollama) to ge
 * **Voice Processing:** Web Speech API (Browser Native) for the mock interview bot.
 
 ---
+
+## Project Structure
+
+skillsync/
+├── client/                 # React Frontend
+│   ├── src/
+│   │   ├── components/     # Reusable UI components (shadcn)
+│   │   ├── pages/          # Dashboard, Roadmap, IDE views
+│   │   ├── redux/          # State slices (user, roadmap, streak)
+│   │   └── lib/            # Utility functions (API clients)
+│   └── vite.config.js
+├── server/                 # Node.js Backend
+│   ├── src/
+│   │   ├── config/         # DB connection, Ollama config
+│   │   ├── controllers/    # Route logic (AI generation, Auth)
+│   │   ├── models/         # Mongoose Schemas (User, Roadmap, Resource)
+│   │   ├── routes/         # API endpoints
+│   │   └── services/       # Business logic (Git verification, Streak calc)
+│   └── package.json
+├── ai-engine/              # Prompts & Model Configurations
+│   ├── prompts/            # System prompts for Roadmap & Code Review
+│   └── modelfile/          # Custom Ollama Modelfile
+└── README.md
